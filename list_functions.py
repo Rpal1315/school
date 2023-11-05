@@ -34,16 +34,39 @@ def list_index():
 
 
 def list_join():
+    """
+    Joins two lists and returns the combined list.
+
+    Returns:
+        list: The combined list.
+    """
+    # Define the first list
     l1 = [1, 3, 5]
+
+    # Define the second list
     l2 = [2, 4, 6]
+
+    # Combine the two lists
     l3 = l1 + l2
+
+    # Return the combined list
     return l3
 
 
 def list_sort():
-    var = list_join()
-    var.sort()
-    return var
+    """
+    Sorts a list of items.
+
+    Returns:
+        list: The sorted list.
+    """
+    # Join the list items into a string
+    items = list_join()
+
+    # Sort the items
+    items.sort()
+
+    return items
 
 
 var = list_sort()
