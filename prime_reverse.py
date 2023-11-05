@@ -11,11 +11,11 @@ while n > 0:
     s = s * 10 + r
     n = n // 10
 
-for i in range(2,n):
+for i in range(2, n):
     if n % i == 0:
         f1 = 1
 
-for i in range(2,s):
+for i in range(2, s):
     if s % i == 0:
         f2 = 1
 

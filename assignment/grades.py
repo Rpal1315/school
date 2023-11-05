@@ -14,13 +14,13 @@ def grades():
         grade = "A"
     elif avg >= 60:
         grade = "B"
-    elif avg >=45:
+    elif avg >= 45:
         grade = "C"
     else:
         grade = "D"
 
     # print the name, roll number and grade of the student
-    print(name,"with roll no.",roll,"has got grade",grade)
+    print(name, "with roll no.", roll, "has got grade", grade)
+
 
 grades()
-

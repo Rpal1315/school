@@ -7,7 +7,7 @@ temp = n
 
 while temp > 0:
     r = temp % 10
-    s = s + r**i
+    s = s + r ** i
     temp = temp // 10
     i = i - 1
 

@@ -10,6 +10,7 @@ def swap_1():
     a = b
     b = c
 
-    print("The numbers are:",a,b)
+    print("The numbers are:", a, b)
+
 
 swap_1()

@@ -10,4 +10,4 @@ while b != 0:
     a = b
     b = r
 
-print("The GCD of the two nos. is",a)
+print("The GCD of the two nos. is", a)

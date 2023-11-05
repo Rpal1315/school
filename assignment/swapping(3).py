@@ -18,4 +18,5 @@ def swap_3():
     # Print the swapped values of a and b
     print("The numbers are:", a, b)
 
+
 swap_3()

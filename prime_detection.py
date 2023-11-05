@@ -1,6 +1,6 @@
 n = int(input("Enter a no.: "))
 chk = True
-for i in range(2,n):
+for i in range(2, n):
     if n % i == 0:
         chk = False
         break

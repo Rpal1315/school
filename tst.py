@@ -2,7 +2,7 @@ import random
 
 a = 0
 i = 0
-tst = random.randint(10,50)
+tst = random.randint(10, 50)
 print(tst)
 
 while i <= 50:
