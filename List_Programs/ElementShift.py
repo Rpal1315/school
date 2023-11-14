@@ -1,13 +1,8 @@
+# Shift the element n places to left
+n = int(input("Enter the value of n: "))
+l = eval(input("Enter the list: "))
 
-
-l1 = list(eval(input("Enter the list: ")))
-
-# Variable Declaration
-leng = len(l1)
-
-for i in range(0,leng+1):
-    t = l1[0]
-    l1.insert(leng-1,t)
-    l1.pop(0)
-
-print(l1)
+for i in range(n):
+    l.append(l[0])
+    l.pop(0)
+print(l)
