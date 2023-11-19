@@ -1,3 +1,4 @@
+# Abbreviate a string
 inp = input("Enter the name: ")
 
 l1 = inp.split(" ")
