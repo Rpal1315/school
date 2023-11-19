@@ -1,3 +1,5 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+/qodana.yaml
+/qodana.sarif.json
