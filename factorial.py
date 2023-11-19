@@ -1,4 +1,4 @@
-## WAP to find the factorial of a no.
+# WAP to find the factorial of a no.
 n = int(input("Enter a no.: ", ))
 f = 1
 
