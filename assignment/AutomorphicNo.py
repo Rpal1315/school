@@ -1,5 +1,5 @@
-# Check if a no is automorpic or not
-a = int(input("Enter the no: "))
+# Check if a no is automorphic or not
+a = int(input("Enter the no.: "))
 b = a ** 2
 if str(b).endswith(str(a)):
     print("The no. is Automorphic")
