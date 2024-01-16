@@ -18,13 +18,15 @@ def list_freq_1(l1: list):
         print(val, ":", count)
     print(l1)
 
+
 def nested_list():
     a = [1,2,3,[5,6]]
 
-def list_insert():
-    a = [1,3]
-    a.insert(1,2)
-    print(a)
+
+def list_insert(lst:list,ins,indx):
+    lst.insert(indx,ins)
+    return lst
+
 
 def list_presence():
     a = [1,2,3,4,5]
@@ -35,11 +37,13 @@ def list_presence():
 
     print(c,d)
 
+
 def list_extend():
     lst1 = [1.5,2.5,3.5,5.4]
     lst2 = [1,2,3,4,5]
     lst2.extend(lst1)
     print(lst2)
+
 
 def list_slice():
     l1 = ["a","e",'p','q','r','i','o','u']
@@ -49,6 +53,7 @@ def list_slice():
     print(lstc)
     l2 = l1.copy()
 
+
 def list_small(a):
     lst = a
     print(lst)
@@ -57,4 +62,18 @@ def list_small(a):
         lst.pop(-1)
         print(lst)
 
-list_small([1,0,1,0,1,0,1])
+
+def list_count(lst:list,src):
+    cnt = lst.count(src)
+    return cnt
+
+
+def list_rewrite(lst:list, src):
+    cnt = list_count(lst,src)
+    lst.sort()
+    i = lst.index(src)
+    l1 = lst[i:i+cnt]
+    return l1
+
+
+
