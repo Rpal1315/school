@@ -1,4 +1,13 @@
 def list_freq(l1: list):
+    """
+    Calculate the frequency of each element in the given list.
+
+    Parameters:
+    l1 (list): A list of elements.
+
+    Returns:
+    None
+    """
     for i in l1:
         count = 0
         for j in l1:
@@ -11,6 +20,15 @@ def list_freq(l1: list):
 
 
 def list_freq_1(l1: list):
+    """
+    Generate the frequency count of each element in a given list.
+
+    Args:
+        l1 (list): The input list for which the frequency count needs to be generated.
+
+    Returns:
+        None: This function does not return any value.
+    """
     while l1:
         count = l1.count(l1[0])
         val = l1[0]
@@ -20,33 +38,55 @@ def list_freq_1(l1: list):
 
 
 def nested_list():
-    a = [1,2,3,[5,6]]
+    a = [1, 2, 3, [5, 6]]
 
 
-def list_insert(lst:list,ins,indx):
-    lst.insert(indx,ins)
+def list_insert(lst: list, ins, indx):
+    """
+    Insert an element into a list at a specified index.
+
+    Args:
+        lst (list): The list to insert the element into.
+        ins: The element to insert into the list.
+        indx (int): The index at which to insert the element.
+
+    Returns:
+        list: The modified list with the element inserted at the specified index.
+    """
+    lst.insert(indx, ins)
     return lst
 
 
-def list_presence():
-    a = [1,2,3,4,5]
-    b = [1,2,3,4,6]
+def list_presence(lst: list, chk):
+    """
+    Check if `chk` is present in `lst`.
 
-    c = 5 in a
-    d = 5 in b
+    Parameters:
+        - lst (list): The list to be checked.
+        - chk: The element to search for in the list.
 
-    print(c,d)
+    Returns:
+        - bool: True if `chk` is present in `lst`, False otherwise.
+    """
+    out = chk in lst
+
+    return out
 
 
-def list_extend():
-    lst1 = [1.5,2.5,3.5,5.4]
-    lst2 = [1,2,3,4,5]
+def list_extend(lst1:list,lst2:list):
+    """
+    Extends lst2 with the elements from lst1.
+
+    Args:
+        lst1 (list): The list to be extended onto lst2.
+        lst2 (list): The list to be extended.
+    """
     lst2.extend(lst1)
     print(lst2)
 
 
 def list_slice():
-    l1 = ["a","e",'p','q','r','i','o','u']
+    l1 = ["a", "e", 'p', 'q', 'r', 'i', 'o', 'u']
     lstc = l1[2:5]
     del l1[2:5]
     print(l1)
@@ -55,6 +95,15 @@ def list_slice():
 
 
 def list_small(a):
+    """
+    Removes the first and last elements from a list until the length of the list is less than or equal to 2.
+
+    Parameters:
+        a (list): The input list.
+
+    Returns:
+        None
+    """
     lst = a
     print(lst)
     while len(lst) > 2:
@@ -63,17 +112,34 @@ def list_small(a):
         print(lst)
 
 
-def list_count(lst:list,src):
+def list_count(lst: list, src):
+    """
+    Count the number of occurrences of a given element in a list.
+
+    Parameters:
+        lst (list): The list to search for the element.
+        src : The element to count in the list.
+
+    Returns:
+        int: The number of times the element appears in the list.
+    """
     cnt = lst.count(src)
     return cnt
 
 
-def list_rewrite(lst:list, src):
-    cnt = list_count(lst,src)
+def list_rewrite(lst: list, src):
+    """
+    A function that takes a list and a source value as input and returns a new list containing a sorted subsequence of the original list, starting from the first occurrence of the source value and ending at the last occurrence.
+
+    Parameters:
+    - lst (list): The original list.
+    - src: The source value to search for in the original list.
+
+    Returns:
+    - list: A new list containing the sorted subsequence of the original list.
+    """
+    cnt = list_count(lst, src)
     lst.sort()
     i = lst.index(src)
-    l1 = lst[i:i+cnt]
+    l1 = lst[i:i + cnt]
     return l1
-
-
-
