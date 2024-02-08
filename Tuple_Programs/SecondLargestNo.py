@@ -1,29 +1,3 @@
-def SecondLargestNoV1(l1: tuple):
-    """
-    Find the second largest number in a given list.
-
-    Parameters:
-    l1 (list): A list of numbers.
-
-    Returns:
-    int: The second largest number in the list.
-    """
-    # Initialize variables
-    largest = second_largest = l1[0]
-
-    # Find the largest number
-    for num in l1:
-        if num > largest:
-            largest = num
-
-    # Find the second largest number
-    for num in l1:
-        if second_largest < num < largest:
-            second_largest = num
-
-    return largest, second_largest
-
-
 def SecondLargestNoV2(l1: tuple) -> tuple:
     """
     This function takes a tuple as input and returns a tuple containing the two largest numbers from the input tuple.
@@ -34,7 +8,7 @@ def SecondLargestNoV2(l1: tuple) -> tuple:
     Returns:
     tuple: A tuple containing the two largest numbers from the input tuple.
     """
-    
+
     # Variable Declaration
     chk1 = chk2 = 0
     leng = len(l1)

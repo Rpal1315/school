@@ -137,7 +137,7 @@ def list_rewrite(lst: list, src):
 
     Returns:
     - list: A new list containing the sorted subsequence of the original list.
-    """
+    """ 
     cnt = list_count(lst, src)
     lst.sort()
     i = lst.index(src)
