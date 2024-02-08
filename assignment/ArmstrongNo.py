@@ -1,5 +1,5 @@
-def ArmstrongNo(inp):
-    # inp = int(input("Enter a no:"))
+def ArmstrongNo():
+    inp = int(input("Enter a no:"))
     leng = len(str(inp))
     s = 0
     for i in str(inp):
@@ -12,4 +12,4 @@ def ArmstrongNo(inp):
         print("The no. is not a Armstrong No.")
 
 
-ArmstrongNo(153)
+ArmstrongNo()
