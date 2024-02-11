@@ -1,4 +1,7 @@
 def ArmstrongNo():
+    """
+    Takes user input, calculates the length of the input number, and checks if it is an Armstrong number.
+    """
     inp = int(input("Enter a no:"))
     leng = len(str(inp))
     s = 0
