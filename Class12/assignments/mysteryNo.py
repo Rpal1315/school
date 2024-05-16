@@ -25,5 +25,15 @@ def mysteryNo(num: int) -> None:
         print("Not a Mystery Number")
 
 
-mysteryNo(129)
-mysteryNo(121)
+
+
+
+def rev(x) -> str:
+    if len(x) > 1:
+        return x[-1] + rev(x[:len(x) - 1])
+    else:
+        return x
+
+if __name__ == '__main__':
+    mysteryNo(129)
+    mysteryNo(121)
