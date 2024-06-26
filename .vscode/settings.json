@@ -1,0 +1,6 @@
+{
+  "python.analysis.typeCheckingMode": "basic",
+  "python.testing.pytestArgs": ["Class12"],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
+}

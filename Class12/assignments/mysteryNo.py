@@ -1,12 +1,12 @@
 # Find out if a no. is a mystery no. or not
-def reverseNo(num: int) -> int:
-    numStr = str(num)
-    numStr = numStr[::-1]
-    num = int(numStr)
+def reverse_no(num: int) -> int:
+    num_str = str(num)
+    num_str = num_str[::-1]
+    num = int(num_str)
     return num
 
 
-def mysteryNo(num: int) -> None:
+def mystery_no(num: int) -> None:
     """
     Mystery No. = A no. which can be expressed as the sum of a number and its reverse.
 
@@ -17,9 +17,9 @@ def mysteryNo(num: int) -> None:
         object: None
     """
     for i in range(1, num // 2 + 1):
-        iRev = reverseNo(i)
-        if i + iRev == num:
-            print(f"Mystery Number. The number pair is ({i},{iRev})")
+        irev = reverse_no(i)
+        if i + irev == num:
+            print(f"Mystery Number. The number pair is ({i},{irev})")
             break
     else:
         print("Not a Mystery Number")
@@ -35,5 +35,5 @@ def rev(x) -> str:
         return x
 
 if __name__ == '__main__':
-    mysteryNo(129)
-    mysteryNo(121)
+    mystery_no(129)
+    mystery_no(121)
