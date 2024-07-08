@@ -6,7 +6,7 @@ Marks       Grade
 <90 and >=60    B
 <60             C
 """
-S={}
+S: dict[str, list[int]] = {}
 entry_count = int(input("Enter the number of entries: "))
 for i in range(entry_count):
     name = input("Enter the name: ")
