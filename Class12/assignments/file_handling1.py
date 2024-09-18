@@ -1,5 +1,12 @@
-# Access multiple lines from a file and print those lines which consists of a digit or a number as a word
+"""
+File Handling Script
 
+This script reads a paragraph from the user, splits it into sentences, and writes each sentence to a file.
+It then reads the file and prints out any lines that contain digits.
+
+Usage:
+    python file_handling1.py
+"""
 f = open(r"C:\Users\Ritankar's PC\Desktop\test.txt", 'w')
 inp = input("Enter the paragraph: ")
 inp_list = inp.split(".")
