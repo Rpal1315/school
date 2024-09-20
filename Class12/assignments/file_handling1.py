@@ -7,6 +7,7 @@ It then reads the file and prints out any lines that contain digits.
 Usage:
     python file_handling1.py
 """
+
 f = open(r"C:\Users\Ritankar's PC\Desktop\test.txt", 'w')
 inp = input("Enter the paragraph: ")
 inp_list = inp.split(".")
@@ -21,3 +22,5 @@ for i in out:
         if j.isdigit():
             print(i)
             break
+
+f1.close()

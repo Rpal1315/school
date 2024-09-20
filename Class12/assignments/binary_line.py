@@ -1,3 +1,4 @@
+# Accept a text with multiple lines and display the line with the longest word
 import pickle
 
 inp = input("Enter a paragraph: ")

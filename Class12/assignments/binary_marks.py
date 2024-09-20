@@ -1,3 +1,4 @@
+# Create a binary file with roll no., name, marks in the form of a dictionary. Display those names who scored more than 85 marks
 import pickle
 
 ent_no = int(input("Enter the number of students: "))
@@ -30,4 +31,6 @@ o_dict = pickle.load(f1)
 
 for i in o_dict:
     if i["marks"] > 85:
-        print(i)
+        print(i["name"])
+
+f1.close()
