@@ -28,3 +28,4 @@ while True:
         f3.close()
         break  
 
+# Displaying the contents of emp1.dat
